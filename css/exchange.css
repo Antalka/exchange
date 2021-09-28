@@ -1,0 +1,174 @@
+/* ------------------- CARD STYLE -------------------- */
+/* Style where will be the listed cards */
+#rates {
+    width: 90%;
+    height: 100%;
+    margin: auto;
+}
+
+h1 {
+    text-align: center;
+}
+
+h2 {
+ text-align: center;
+}
+
+/* Cards Style */
+#cards  {
+    height: 100%;
+    width: 100%;
+    display: inline-block;
+}
+.card {
+    background-color: #cacaca;
+    width: 200px;
+    height: 100px;
+    float: left;
+    padding: 10px;
+    margin: 5px;
+    border: solid 2px;
+    border-radius: 10px;
+}
+.flag {
+    /*background-color: brown;*/
+    width: 100px;
+    height: 100px;
+    float: left;
+}
+.description {
+    color: black;
+    float: right;
+    width: 70%;
+    height: 90%;
+    margin-top: 20px;
+}
+/* Details in description */
+.desc {
+    display: block;
+    margin-left: 10px;
+}
+.close {
+    width: 20px;
+    height: 20px;
+    position: relative;
+    left: 98%;
+    margin-top: -10px;
+    cursor: pointer;
+}
+
+/* Base Card Style */
+#baseCountry {
+    background-color: aqua;
+}
+
+/*---------------- LIST STYLE ----------------*/
+/* List style, where you select the contries */
+.listMain {
+    position: absolute;
+    left: 50%;
+    height: 70%;
+    margin-left: -170px;
+    top: 100px;
+    display: none;
+}
+.list {
+    border: solid 2px;
+    overflow-y: scroll;
+    height: 100%;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+/* Card style in the list */
+.cardList {
+    background-color: #cacaca;
+    width: 300px;
+    height: 50px;
+    padding: 10px;
+    border-bottom: solid 2px;
+}
+/* Selected countries style in the list */
+.selected {
+    background-color: #747272;
+}
+/* A card content in the cardList (flag, details)*/
+.flagList {
+    width: 50px;
+    height: 50px;
+    float: left;
+    padding-right: 20px;
+    padding-left: 10px;
+}
+.details {
+    color: white;
+    line-height: 45px;
+}
+
+/*---------------- BUTTON STYLE ----------------*/
+/* Button Styles general*/
+button {
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    background-color: green;
+    width: 150px;
+    height: 50px;
+    color: white;
+    font-size: 15px;
+    cursor: pointer;
+}
+button:hover {
+    background-color: orange;
+}
+/* Open the list button */
+.openList {
+    position: absolute;
+    padding-bottom: 50px;
+    left: -75px;
+    margin-left: 50%;
+}
+/* Hide list button style */
+.hideListButton {
+    margin-top: 20px;
+    text-align: center;
+}
+/* Delete card button */
+.deleteButton {
+    position: absolute;
+    text-align: center;
+}
+
+/*---------------- MEDIA STYLE ----------------*/
+@media screen and (max-width: 600px) {
+    .card {
+      width: 90%;
+      height: 100px;
+    }
+    .flag {
+        width: 50px;
+        height: 50px;
+    }
+}
+
+@media screen and (min-width: 600px) and (max-width: 1300px)  {
+    .card {
+        width: 42%;
+        height: 100px;
+        font-size: 2vw;
+    }
+    .flag {
+        width: 50px;
+        height: 50px;
+    }
+}
+@media screen and (min-width: 1300px) {
+    .card {
+        width: 30%;
+        height: 100px;
+    }
+}
